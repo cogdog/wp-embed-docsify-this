@@ -35,7 +35,7 @@ add_action( 'init', 'cogdog_docsify_this_register_embeds' );
 function cogdog_handler_docsify_this( $matches, $attr, $url, $rawattr ) {
 
 	$embed = 
-		'<div style="width: 100%; margin: 0; padding: 0; overflow: hidden;" class="docsify-this-embed"><iframe src="https://docsify-this.net/?basePath=' . esc_attr($matches[1])  . '"  style="width: 100%; height: 2700px; border: none; display: block;" scrolling="no" frameborder="0"></iframe></div>';
+		'<div style="width: 100%; margin: 0; padding: 0; overflow: hidden;" class="docsify-this-embed"><iframe src="https://docsify-this.net/?basePath=' . esc_attr($matches[1])  . '"  style="width: 100%; height: 2700px; border: none; display: block;" scrolling="yes" frameborder="0"></iframe></div>';
 
 	return $embed;
 }
