@@ -32,8 +32,6 @@ function cogdog_docsify_this_register_embeds() {
 
 add_action( 'init', 'cogdog_docsify_this_register_embeds' );
 
-}
-
 function cogdog_handler_docsify_this( $matches, $attr, $url, $rawattr ) {
 
 	$embed = 
